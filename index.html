@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy FF Sensibility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo"><span>AF</span> ANDY FF
+      <small>SENSIBILITY</small>
+    </div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#generateur">Générateur</a>
+      <a href="#apropos">À propos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <p class="tag">FREE FIRE • SENSIBILITY</p>
+      <h1>ANDY FF<br><span>SENSIBILITY</span></h1>
+      <p>Génère ta sensibilité Free Fire selon ton téléphone
+      et améliore ton gameplay !</p>
+    </section>
+
+    <section class="generator" id="generateur">
+      <div class="panel">
+        <h2>Générateur de sensibilité</h2>
+        <p>Choisis ton téléphone pour commencer.</p>
+
+        <label for="telephone">Ton téléphone</label>
+        <select id="telephone">
+          <option value="redmi">Redmi</option>
+          <option value="oppo">Oppo</option>
+          <option value="poco">Poco</option>
+          <option value="googlepixel">google pixel</option>
+          <option value="samsung">samsung</option>
+          <option value="itel">itel</option>
+          <option value="autre">Autre téléphone</option>
+        </select>
+
+        <label for="style">Style de jeu</label>
+        <select id="style">
+          <option value="one">One Tap / Headshot</option>
+          <option value="drag">Drag Headshot</option>
+          <option value="precision">Précision</option>
+        </select>
+
+        <label>Échelle de sensibilité</label>
+        <div class="choices">
+          <button class="scale active" data-scale="200">0 – 200</button>
+        </div>
+
+        <button id="generer" class="primary">
+          ✦ Générer ma sensibilité
+        </button>
+      </div>
+
+      <div class="panel">
+        <h2>Résultat</h2>
+        <p id="description">Ta configuration apparaîtra ici.</p>
+        <div id="resultat"></div>
+        <button id="copier" class="secondary" disabled>
+          Copier les sensibilités
+        </button>
+      </div>
+    </section>
+
+    <section class="features" id="apropos">
+      <div><h3>Rapide</h3><p>Génération en quelques secondes.</p></div>
+      <div><h3>Simple</h3><p>Choisis ton téléphone facilement.</p></div>
+      <div><h3>Gratuit</h3><p>Teste tes réglages sans inscription.</p></div>
+    </section>
+  </main>
+
+  <footer>© 2026 Andy FF Sensitivity</footer>
+  <script src="script.js"></script>
+</body>
+</html>
